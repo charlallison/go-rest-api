@@ -3,5 +3,5 @@
 package test
 
 const (
-	BASE_URL = "http://localhost:8080"
+	BaseUrl = "http://localhost:8080"
 )

@@ -10,7 +10,7 @@ import (
 
 func TestGetComments(t *testing.T) {
 	client := resty.New()
-	resp, err := client.R().Get(BASE_URL + "/api/comment")
+	resp, err := client.R().Get(BaseUrl + "/api/comment")
 	if err != nil {
 		t.Fail()
 	}
@@ -22,7 +22,7 @@ func TestPostComment(t *testing.T) {
 	client := resty.New()
 	resp, err := client.R().
 		SetBody(`{"slug": "/", "author": "charles", "body": "hello world"}`).
-		Post(BASE_URL + "/api/comment")
+		Post(BaseUrl + "/api/comment")
 	if err != nil {
 		t.Fail()
 	}
