@@ -21,8 +21,7 @@ func (app *App) Run() error {
 	log.WithFields(log.Fields{
 		"AppName":    app.Name,
 		"AppVersion": app.Version,
-	})
-	log.Info("Setting up our App")
+	}).Info("Setting up our App")
 
 	var err error
 	db, err := database.NewDatabase()
